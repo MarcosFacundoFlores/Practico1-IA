@@ -121,7 +121,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 "use strict";
 
 function f(x, y) {
-  return (2 ^ x) + (3 ^ y);
+  return Math.pow(2, x) + Math.pow(3, y);
 }
 var resultadoConcreto = 1;
 var step = 0.001;
@@ -144,7 +144,7 @@ for (var x = x_min; x <= x_max; x += step) {
   }
 }
 console.log("La mejor aproximación es x = " + mejor_x + ", y = " + mejor_y + ", con un error de " + mejor_error);
-document.getElementById("app").innerHTML = "\n                <h2>2^x + 3^y = 1</h2>\n                <h4>La mejor aproximaci\xF3n es: </h4>\n                <h4>x =  ".concat(mejor_x.toFixed(5), "</h4>\n                <h4>y =  ").concat(mejor_y.toFixed(5), "</h4>\n                <h4>con un error de ").concat(mejor_error, "</h4>");
+document.getElementById("app").innerHTML = "\n                <h2>2^x + 3^y = 1</h2>\n                <h4>La mejor aproximaci\xF3n es: </h4>\n                <h4>x =  ".concat(mejor_x.toFixed(3), "</h4>\n                <h4>y =  ").concat(mejor_y.toFixed(3), "</h4>\n                <h4>con un error de ").concat(mejor_error, "</h4>");
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -170,7 +170,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51326" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59437" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

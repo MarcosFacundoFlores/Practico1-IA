@@ -2,7 +2,7 @@
 
 
 function f(x, y) {
-  return (2 ^ x) + (3 ^ y);
+  return Math.pow(2,x) + Math.pow(3,y);
 }
 
 var resultadoConcreto = 1;
@@ -37,6 +37,6 @@ document.getElementById(
 ).innerHTML = `
                 <h2>2^x + 3^y = 1</h2>
                 <h4>La mejor aproximación es: </h4>
-                <h4>x =  ${mejor_x.toFixed(5)}</h4>
-                <h4>y =  ${mejor_y.toFixed(5)}</h4>
+                <h4>x =  ${mejor_x.toFixed(3)}</h4>
+                <h4>y =  ${mejor_y.toFixed(3)}</h4>
                 <h4>con un error de ${mejor_error}</h4>`;
